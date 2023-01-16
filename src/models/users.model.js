@@ -1,5 +1,5 @@
 const db=require('../utils/database');
-const {DataTypes}=require ('sequelize');
+const { DataTypes } = require("sequelize")
 
 
 const Users= db.define("users",{
@@ -11,21 +11,21 @@ const Users= db.define("users",{
  },
  firstName:{
   type: DataTypes.STRING,
-  allowNull:true,
+  allowNull:false,
   field:"first_name"
 },
 lastName:{
  type: DataTypes.STRING,
- allowNull:true,
+ allowNull:false,
  field:"last_name"
 },
 password:{
  type: DataTypes.STRING,
- allowNull:true,
+ allowNull:false,
 },
 email:{
  type: DataTypes.STRING,
- allowNull:true,
+ allowNull:false,
  unique:true,
  validate:{
   isEmail:true

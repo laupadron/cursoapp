@@ -12,15 +12,15 @@ const Videos= db.define("videos",{
  },
  title:{
   type: DataTypes.STRING,
-  allowNull:true,
+  allowNull:false,
 },
 url:{
  type: DataTypes.STRING,
- allowNull:true,
+ allowNull:false,
 },
 courseId:{
  type: DataTypes.INTEGER,
- allowNull:true,
+ allowNull:false,
  field:"course_id",
  references:{
   model:Courses,

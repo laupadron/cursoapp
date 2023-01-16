@@ -12,7 +12,7 @@ const UsersCourses= db.define("usersCourses",{
  },
  userId:{
   type: DataTypes.INTEGER,
-  allowNull:true,
+  allowNull:false,
   field:"user_id",
   references:{
    model:Users,
@@ -21,7 +21,7 @@ const UsersCourses= db.define("usersCourses",{
 },
 courseId:{
  type: DataTypes.INTEGER,
- allowNull:true,
+ allowNull:false,
  field:"course_id",
  references:{
   model:Courses,

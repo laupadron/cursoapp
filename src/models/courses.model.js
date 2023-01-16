@@ -11,15 +11,15 @@ const Courses= db.define("courses",{
  },
  title:{
   type: DataTypes.STRING,
-  allowNull:true,
+  allowNull:false,
 },
 description:{
  type: DataTypes.STRING,
- allowNull:true,
+ allowNull:false,
 },
 instructor:{
  type: DataTypes.STRING,
- allowNull:true,
+ allowNull:false,
 },
 },
 {

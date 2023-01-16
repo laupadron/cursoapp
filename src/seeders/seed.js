@@ -9,9 +9,9 @@ const initModels=require('../models/initModels');
 initModels();
 
 const users=[
- {firstName:"Laura",lastName:"Padrón",password:1234,email:"laupadron@gmail.com"},
- {firstName:"Lucrecia",lastName:"Padrón",password:5678,email:"lucrepadron@gmail.com"},
- {firstName:"Sofia",lastName:"Maidana",password:9587,email:"sofimaidana@gmail.com"},
+ {firstName:"Laura",lastName:"Padrón",password:"1234",email:"laupadron@gmail.com"},
+ {firstName:"Lucrecia",lastName:"Padrón",password:"5678",email:"lucrepadron@gmail.com"},
+ {firstName:"Sofia",lastName:"Maidana",password:"9587",email:"sofimaidana@gmail.com"},
 ]
 
 const courses=[
@@ -50,7 +50,7 @@ const videos =[
  {title:"como curar un jabon",url:"http//www.jabonesartesanales.com",courseId:5},
 ]
 
-db.sync({force:false})
+db.sync({force:true})
 .then(()=>{
  console.log('iniciando el sembradio');
  users.forEach((user)=>Users.create(user));

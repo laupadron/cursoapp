@@ -12,11 +12,11 @@ const Categories= db.define("categories",{
  },
  name:{
   type: DataTypes.STRING,
-  allowNull:true,
+  allowNull:false,
 },
 courseId:{
  type: DataTypes.INTEGER,
- allowNull:true,
+ allowNull:false,
  field:"course_id",
  references:{
   model:Courses,
